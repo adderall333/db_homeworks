@@ -46,7 +46,7 @@ ALTER TABLE movies ADD CHECK (budget >= 1000);
 ALTER TABLE movies DROP COLUMN genres;
 
 CREATE TABLE genres (
-    id INT PRIMARY KEY NOT NULL,
+    id SERIAL PRIMARY KEY NOT NULL,
     name VARCHAR(20) NOT NULL
 );
 

@@ -1,7 +1,7 @@
 CREATE TABLE movies (
     id BIGSERIAL NOT NULL,
 	name VARCHAR(40) NOT NULL,
-	description VARCHAR(300) NOT NULL,
+	description VARCHAR(1000) NOT NULL,
 	year INTEGER NOT NULL CHECK(year > 1900 AND year < 10 + EXTRACT(YEAR FROM now())),
 	genres VARCHAR(50) NOT NULL,
 	country VARCHAR(20) NOT NULL,
